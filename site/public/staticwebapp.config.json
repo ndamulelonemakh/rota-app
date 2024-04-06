@@ -1,0 +1,8 @@
+{
+    "platform": {
+    "apiRuntime": "python:3.10"
+  },
+  "engines": {
+   "node": ">=20.0.0"
+  }
+}

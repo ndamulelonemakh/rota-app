@@ -1,0 +1,37 @@
+{
+  "name": "rota-app",
+  "version": "1.0.3-beta",
+  "description": "A simple shift schedular built with vanilla javascript and a serveless Python API",
+  "private": false,
+  "engines": {
+    "node": ">=0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-prod": "webpack --mode=production",
+    "build:azure": "npm run build-prod",
+    "start": "npm run build-prod && swa start ./public --api-location ./../api",
+    "dev": "webpack-dev-server --mode=development"
+  },
+  "keywords": [
+    "vanillajs",
+    "webpack",
+    "javascript",
+    "azure static webapp", 
+    "azure functions"
+  ],
+  "author": "Ndamulelo Nemakhavhani <@NdamuleloNemakh>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2"
+  }
+}

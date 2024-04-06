@@ -1,0 +1,85 @@
+main>h1{
+  color: #4A148C;
+}
+
+.header>h1,h2,h3,h4{
+    color: #4A148C;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'nav nav nav nav nav nav'
+  'hd hd hd hd hd hd'
+  '. main main main main .'
+  'dash dash dash dash dash dash'
+  'rost rost rost rost rost rost'
+  'footer footer footer footer footer footer'
+  ;
+  grid-gap: 10px;
+}
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+/* Main sections */
+.top-nav{
+  grid-area: nav;
+  background: purple;
+  color: white;
+  font-weight: bolder;
+  padding: 2em;
+}
+
+.header{
+  grid-area: hd;
+  background: white;
+  border-radius: 2em;
+  padding: 1em 2em;
+  margin: 0em 1em;
+}
+
+.social{
+  grid-area: share;
+  margin: 1px auto;
+  padding: 0.5em;
+}
+
+.main-content{
+  grid-area: main;
+  text-align: center;
+  margin: 3em auto;
+  background: white;
+  padding: 2em;
+  border-radius: 2em;
+}
+
+.dashboard{
+  grid-area: dash;
+  background: white;
+}
+
+.roster-container{
+  grid-area: rost;
+  display: none;
+  margin: 2em auto;
+  padding: 3em;
+}
+
+.footer{
+  grid-area: footer;
+  margin: 5em auto;
+}
+
+/* ..End main sections */
+
+
+#loader-placeholder{
+  display: none;
+  max-width: 80%;
+  margin: 0 auto;
+}

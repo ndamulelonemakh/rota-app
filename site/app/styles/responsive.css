@@ -1,0 +1,22 @@
+/* Must cover tables , smartphones etc */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "hd hd hd hd hd hd"
+      "share share share share share share"
+      "main main main main main main"
+      "dash dash dash dash dash dash"
+      "rost rost rost rost rost rost"
+      "footer footer footer footer footer footer";
+    grid-gap: 5px;
+  }
+
+  #staff-input-div{
+    width: 100%;
+  }
+
+  .staff-input, .section-input{
+    width: 80%;
+  }
+}
