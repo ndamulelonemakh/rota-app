@@ -4,7 +4,6 @@
 
 > For example, if you have a team of 10 people and you need to schedule shifts for 5 days, the app will attemot to  generate a schedule that ensures that each person works 2 days and has 3 days off.
 
-* Check out the [Live Demo here]()
 * **Disclaimer:** The main focus of this app was really checking the feasibility of building complex Javascript applications without using any frameworks. So the app functionality is not guaranteed to always work as expected.
 
 
