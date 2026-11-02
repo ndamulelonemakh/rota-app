@@ -23,7 +23,7 @@
   "author": "Ndamulelo Nemakhavhani <@NdamuleloNemakh>",
   "license": "MIT",
   "devDependencies": {
-    "css-loader": "^6.10.0",
+    "css-loader": "^7.1.5",
     "file-loader": "^6.2.0",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.3",
