@@ -5,8 +5,8 @@ import { AppTemplate } from "./app.template";
 import { RosterController, SimpleLoaderComponent, CreateRosterComponent, getFormValue } from "./components/index";
 import { makeAsyncGetRequest, isNullOrEmpty, generateDictFromArr } from "./shared/index";
 
-import * as jsPDF from "jspdf";
-import "jspdf-autotable";
+import { jsPDF } from "jspdf";
+import { autoTable } from "jspdf-autotable";
 
 /**
  * This will inject the bundled components into the main content div defined in public/index.html
@@ -139,13 +139,13 @@ function initialiseRosterContainerBtns() {
 
   // Export pdf btn
   document.getElementById("export_to_pdf").addEventListener("click", () => {
-    const doc = new jsPDF.jsPDF();
-    doc.autoTable({
+    const doc = new jsPDF();
+    autoTable(doc, {
       html: "#shedule-table",
       theme: "striped",
       headStyles: { fillColor: [155, 89, 182] },
     });
-    let finalY = doc.previousAutoTable.finalY;
+    let finalY = doc.lastAutoTable.finalY;
     doc.text("Xxx - x Day Rooster", 15, finalY + 15);
     doc.save("roster.pdf");
   });
